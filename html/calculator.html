@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/calculatorStyle.css">
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"> -->
+</head>
+
+<body>
+    <div class="headingContainer">
+        <h1><span><a href="#">Calculator</a></span></h1>
+    </div>
+    <div class="mainBody">
+        <div class="body">
+            <!-- <textarea draggable="false" id="value"></textarea> -->
+            <div id="value" class="containsValue"></div>
+            <div class="keyBody">
+                <div class="firstContainer">
+                    <button class="container effect specOperator1">Clr</button>
+                    <button class="container effect specOperator3"><img src="/images/cross.png" alt="cross"></button>
+                    <button class="container effect number">%</button>
+                    <button class="container effect number">/</button>
+                </div>
+                <div class="firstContainer">
+                    <button id ="no" class="container number ">7</button>
+                    <button id ="no" class="container number">8</button>
+                    <button id ="no" class="container number">9</button>
+                    <button class="container effect number">*</button>
+                </div>
+                <div class="firstContainer">
+                    <button id ="no"class="container number">4</button>
+                    <button id ="no"class="container number">5</button>
+                    <button id ="no"class="container number">6</button>
+                    <button class="container  effect number">-</button>
+                </div>
+                <div class="firstContainer">
+                    <button id ="no" class="container number">1</button>
+                    <button id ="no"class="container number">2</button>
+                    <button id ="no" class="container number">3</button>
+                    <button class="container effect number">+</button>
+                </div>
+                <div class="firstContainer">
+                    <button id ="no"class="container number">00</button>
+                    <button id ="no"class="container number">0</button>
+                    <button id ="no"class="container number">.</button>
+                    <button id="extra" class="container">=</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="foot"></footer>
+    <script src="/js/calculatorScript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/advancedCss.css">
+    <!-- This is the use of after and before with the help of webkit. -->
+    <!-- <style>
+        /* .main{
+            height:100vh;
+            width:100vw;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        } */
+         div{
+           transform:translateX(20%) translateY(50%);
+            font-size:6rem;
+            font-weight: bolder;
+            /* background-color: black; */
+            color:black;
+        }
+        div::before{
+            content: "HAPPY SOCKS";
+            position:absolute;
+            /* background-color: aqua; */
+            /* color:black; */
+            z-index:-1;
+            /* transition:1.3s ease; */
+            left:-10px;
+            top :-10px;
+            -webkit-text-stroke-width: 2px ;
+            -webkit-text-stroke-color: black;
+            /* stroke-width: 2px;
+            stroke: black; */
+            color:transparent;  
+            
+        }
+        /* .main div:hover::before{
+            transform: scale(1.4);
+            opacity:0;
+        } */
+    </style> -->
+    <!-- <div>
+        HAPPY SOCKS
+    </div> -->
+    <style>
+        div {
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <iframe width="1045" height="588" src="https://www.youtube.com/embed/vqXLGX0szIQ?list=LL"
+            title="Motion Design for the Web | FREE COURSE" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</body>
+
+</html>
