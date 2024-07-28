@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family:'poppins',sans-serif;     */
+}
+
+.headingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    height:08vh;
+    padding:10px 10px 10px 10px;
+}
+.headingContainer span{
+    /* border: 2px sodlid white; */
+    padding:10px 10px 10px 10px;
+}
+.headingContainer h1 span a {
+    text-decoration: none;
+    color:whitesmoke;
+}
+.headingContainer h1 span:hover{
+    transition:0.3s;
+    font-size:2.5rem;
+}
+.mainBody{
+    width:100%;
+    height:84vh;
+    background-color: pink;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBody .body{
+    height: 85%;
+    width: 25%;
+    border:3px solid black;
+    background-color: rgb(95, 91, 201);
+    padding:10px 1px 2px 10px;
+    /* border-radius:20px; */
+}
+.body .containsValue{
+    width:99%;
+    height:20%;
+    background-color: aliceblue;
+    /* border:4px solid black */
+    box-sizing: border-box;
+    padding:25px 3px 3px 10px;
+    font-size: 2rem;
+    overflow:scroll;    
+}
+.body .keyBody{
+    width:99%;
+    height:77%;
+    border:4px solid black;
+    margin-top:10px;
+    box-sizing: border-box;
+    padding-top:30px;
+    padding-left:3px;
+    padding-right:13px;
+    overflow:hidden;
+    
+}
+.keyBody .firstContainer{
+    display:flex;
+    justify-content: flex-start;
+    padding:0;}
+
+.keyBody .firstContainer .container{
+    height:60px;
+    width: 500px;
+    color:white;
+    display:flex;
+    border-radius:10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 3px 0px 0px 10px;
+    /* padding:35px 12px 15px 56px;  it is not appropriate for the all types of text used in the keys.*/ 
+}
+button{
+    background-color:rgb(37, 36, 36);
+    color:white;
+    border-style:none;
+    font-size: 1rem;
+    cursor:pointer;
+}
+#extra{
+    background-color:rgb(0, 183, 255);
+    color:black;
+}
+#no{
+    background-color:rgb(54, 53, 53);
+}
+#no:hover{
+    background-color:rgb(37, 36, 36);
+}
+button img{
+    width:20px;
+}
+/* for Color effect use javascript as it is not working with css */
+/* Done there is mistake in element handling */
+.effect:hover{
+    background-color:rgb(54, 53, 53); 
+}
+
+.foot{
+    width:100%;
+    height: 6vh;
+    background-color: black;
+}
+/* It is for responsiveness of the site it is not complete because i can't imagine the equipment size... */
+@media (max-width: 600px){
+    .mainBody .body{
+        background-color: lightcoral;
+        width:90%;
+    }
+    .mainBody .body .keyBody{
+        overflow:scroll;
+        /* height:8%; */
+    }
+}
+@media (min-width: 601px) and (max-width:900px){
+    .mainBody .body{
+        background-color: rgb(251, 0, 0);
+        width:80%;
+        height:80%;
+    }
+}
+@media (max-width:900px){
+
+} 

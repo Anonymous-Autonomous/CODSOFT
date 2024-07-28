@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: #D0D4D5;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navigation-bar {
+    height: 10%;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between;  not working on the flex */
+    margin: 0px 0px 0px 5rem;
+    gap: 8rem;
+}
+
+/* margin: 0px 0px 0px -5rem; */
+.image {
+    cursor: pointer;
+
+    img {
+        width: 90px;
+    }
+}
+
+/* .list{
+    margin: 0px 0px 0px -5rem;
+} */
+.list ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+    & li {
+        font-size: 1rem;
+        font-weight: 800;
+        transition: transform, 2000ms, ease-in-out;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            border: 1px solid black;
+            background-color: black;
+            border-radius: 10px;
+            bottom: -2px;
+            height: 2px;
+            /* Center to sideways */
+            /* width:0px;
+            left:50%;
+            transition:width 0.3s ease-in-out, left 0.3s ease-in-out;   */
+            /* side Ways moment of a line */
+            width: 100%;
+            left: 0;
+            /* transform:translate(-100%); */
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+
+        &:hover {
+            transform: scale(1.4);
+            font-weight: 700;
+            cursor: pointer;
+            /* text-decoration: underline; */
+        }
+    }
+}
+
+
+.navigation-bar .container2 {
+    padding-right: 4rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5rem;
+}
+
+.search,
+.cart,
+.side-panel {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.cart .cart-number {
+    width: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    height: 90%;
+    width: 100%;
+}
+
+.information {
+    /* background-color: black; */
+    /* align-items:center; */
+    /* justify-content:flex-start; */
+    /* text-align: left; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+    padding-top: 8rem;
+}
+
+.information .heading {
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.information h1 {
+    /* text-align:center; */
+    font-size: 3.5rem;
+    white-space: wrap;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.information .paragraph {
+    color: black;
+    font-weight: 600;
+    width: 25rem;
+    margin-bottom: 3rem;
+}
+
+.information .btn {
+    background-color: black;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    text-decoration: none;
+    transform: scale(1);
+    /* transform:translate(50%); */
+    transition: transform 1ms ease-in-out;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        background-color: rgb(23, 14, 9);
+        /* color:black; */
+        font-weight: bolder;
+    }
+}
+
+
+
+.cards {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* background-color: black; */
+    width: 65%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    gap: 3rem;
+    overflow:scroll;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    min-height: 70%;
+    box-sizing: border-box;
+    width: 345px;
+    background-color: rgb(234, 233, 233);
+    color: black;
+    overflow: hidden;
+    /* margin: 0px 10px 0px 0px; */
+    /* no need as we can achieve it with the help of gap in flex */
+    border-radius: 20px;
+}
+
+.card .shoe-image {
+    margin-bottom: 1rem;
+}
+
+.shoe-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.addToCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 11rem; */
+    transform: translateX(4%);
+    transition: transform 3000ms ease;
+
+    .cartButton {
+        font-weight: 500;
+        white-space: wrap;
+        margin-right: 10px;
+        font-weight: 500;
+        border:none;
+        background-color:rgb(234, 233, 233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width:4rem; */
+        & span{
+            margin-right:20px;
+            /* transform:translateX(0%); */
+
+        }
+        
+    }
+    &:hover {
+        /* background-color: rgb(186, 176, 176); */
+        transform:translateX(30%);
+        font-weight: bolder;
+        /* background-color: aquamarine; */
+        /* transform:translateX(30%); */
+        .cartButton{
+            cursor:pointer;
+            /* background-color: aquamarine;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px; */
+        }
+    }
+    }
+
+.type {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    /* width: 100%; */
+    height: 3rem;
+    width: 15rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* padding: 15px 0px 0px 25px; */
+    margin-left: 6.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+    height: 3rem;
+    width: 15rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 6.5rem;
+}
