@@ -1,4 +1,4 @@
-# This is my first WebDevelopment Integrated Project where i have given the 3 Projects
+# This is my first WebDevelopment Integrated Project where i have completed 3 task of my codsoft online Internship submission
 #1. Profile Page
 #2. Landing Page
 #3. Calculator
