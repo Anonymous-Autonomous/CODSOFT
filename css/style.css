@@ -27,13 +27,15 @@
     overflow:hidden;
     margin-top: 180px;
     border-radius:100px;
-    border:6px solid rgb(141, 64, 64);
     /* box-shadow:10px 10px 20px rgb(240, 166, 166); */
+    /* padding-right:30px; */
 }
 .main .navigation-bar .profile_image a img{
-    object-fit: cover;
+    /* border:6px solid rgb(141, 64, 64); */
+    object-fit:contain;
     width:150px;
     height:150px;
+    object-position: center;
 }
 .main .navigation-bar .list-item{
     margin-top:25px;
