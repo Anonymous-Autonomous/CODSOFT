@@ -126,6 +126,7 @@ main {
     flex-direction: column;
     padding-left: 4rem;
     padding-top: 8rem;
+    /* position:fixed */
 }
 
 .information .heading {
@@ -161,7 +162,7 @@ main {
     /* transform:translate(50%); */
     transition: transform 1ms ease-in-out;
     border: none;
-
+    
     &:hover {
         cursor: pointer;
         transform: scale(1.2);
@@ -175,18 +176,25 @@ main {
 
 .cards {
     display: flex;
-    /* flex-wrap: wrap; */
+    /* flex-grow:1; */
+    flex-wrap: wrap;
     /* background-color: black; */
-    width: 65%;
+    width:65%;  
+    /* Invalid property as i have set flex-shrink... */
+    box-sizing: border-box;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10px;
-    gap: 3rem;
+    padding-left: 10px  ;
+    padding-top:100px;
+    column-gap: 15rem;
+    row-gap:5rem;
     overflow:scroll;
+    flex-shrink:0;
 }
 
 .card {
     display: flex;
+    /* flex-grow:1; */
     flex-direction: column;
     /* justify-content: end; */
     min-height: 70%;
